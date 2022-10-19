@@ -39,7 +39,7 @@
           {"field": "NO_OF_VEHICLES", "type": "quantitative", "title": "Number of vehicles involved"},
           {"field": "RMA", "type": "nominal", "title": "Type of road"},
           {"field": "ROAD_GEOMETRY", "type": "nominal", "title": "Road geometry"},
-          {"field": "LIGHT_CONDITION", "type": "nominal", "title": "Light level"},
+          {"field": "LIGHT_CONDITION", "type": "nominal", "title": "Light condition"},
           {"field": "HIT_RUN_FLAG", "type": "nominal", "title": "Hit and run"},
           {"field": "POLICE_ATTEND", "type": "nominal", "title": "Police involved"}	
         ]
