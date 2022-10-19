@@ -1,1 +1,49 @@
-
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json", 
+  "width": 800, 
+  "height": 450, 
+  "title": "Car crashes fatalities in Victoria (July 2015 - June 2020)",
+  "projection": {"type": "mercator"},
+  "layer": [
+    {
+      "data": {
+      "url": "https://raw.githubusercontent.com/JiayueJoyHuang/Assignment2/main/vic_localities.topojson",
+      "format": {"type": "topojson", "feature": "vic_localities"}
+      },
+      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/JiayueJoyHuang/Assignment2/main/Road_Crashes_for_five_Years_Victoria.csv"
+      },
+      "mark": {"type": "circle", "fill": "darkred"},
+      "encoding": {
+        "longitude": {"field": "LONGITUDE", "type": "quantitative"},
+        "latitude": {"field": "LATITUDE", "type": "quantitative"},
+        "size": {
+          "field": "FATALITY",
+          "type": "quantitative",
+          "title": "Number of fatalities"
+        },
+        "tooltip": [
+          {"field": "LONGITUDE", "type": "quantitative", "title": "Longitude"},
+          {"field": "LATITUDE", "type": "quantitative", "title": "Latitude"},
+          {"field": "LGA_NAME", "type": "nominal", "title": "LGA"},
+          {"field": "REGION_NAME", "type": "nominal", "title": "Region"},
+          {"field": "DAY_OF_WEEK", "type": "nominal", "title": "Day of week"},
+          {"field": "ACCIDENT_TYPE", "type": "nominal", "title": "Type of accident"},
+          {"field": "FATALITY", "type": "quantitative", "title": "Number of fatalities"},	
+          {"field": "ALCOHOL_RELATED", "type": "nominal", "title": "Alcohol related accident"},
+          {"field": "SPEED_ZONE", "type": "nominal", "title": "Speed zone"},
+          {"field": "UNLICENCSED", "type": "quantitative", "title": "Number of unlicensed drivers involved"},
+          {"field": "NO_OF_VEHICLES", "type": "quantitative", "title": "Number of vehicles involved"},
+          {"field": "RMA", "type": "nominal", "title": "Type of road"},
+          {"field": "ROAD_GEOMETRY", "type": "nominal", "title": "Road geometry"},
+          {"field": "LIGHT_CONDITION", "type": "nominal", "title": "Light level"},
+          {"field": "HIT_RUN_FLAG", "type": "nominal", "title": "Hit and run"},
+          {"field": "POLICE_ATTEND", "type": "nominal", "title": "Police involved"}	
+        ]
+      }
+    }  
+  ]
+}
