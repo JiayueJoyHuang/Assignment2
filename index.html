@@ -12,33 +12,29 @@
       <p>Feeling safe is a basic human right. This visualisation presents information regarding road crashes in Victoria from June 2015 - July 2020.
         It aims to enhence our understanding of road safety in Victoria, to reduce the pain and suffereing caused by road crashes. The data presented
         has been collected by VicRoads, an organisation that developes and manages the roads in Victoria.</p>
-      <div id="vis1"></div>
+      <div id="injuries_and_fatalities"></div>
     </div>
   </div>
   
   <script type="text/javascript">
-    var specVis1 = "./injuries_and_fatalities.json";
-    var specVis2 = "./fatalities.json";
-    var specVis3 = "./light_condition.json";
-    var specVis4 = "./days_of_week.json";
+    var Vis1 = "./injuries_and_fatalities.json";
+    var Vis2 = "./fatalities.json";
+    var Vis3 = "./light_condition.json";
+    var Vis4 = "./days_of_week.json";
 
-    vegaEmbed('#vis1', specVis1, { "actions": false }).then(function (result) {
+    vegaEmbed('#injuries_and_fatalities', Vis1, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
-    vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
+    vegaEmbed('#fatalities', Vis2, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
-    vegaEmbed('#vis3', specVis3, { "actions": false }).then(function (result) {
+    vegaEmbed('#light_condition', Vis3, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
-    vegaEmbed('#vis4', specVis4, { "actions": false }).then(function (result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    }).catch(console.error);
-
-    vegaEmbed('#vis5', specVis5, { "actions": false }).then(function (result) {
+    vegaEmbed('#days_of_week', Vis4, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
   </script>
