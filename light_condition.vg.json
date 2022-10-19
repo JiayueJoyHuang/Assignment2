@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json", 
+  "title": "Total number of injuries and fatalities at different light conditions",
+  "data": {"url": "https://raw.githubusercontent.com/JiayueJoyHuang/Assignment2/main/Road_Crashes_for_five_Years_Victoria.csv"},
+  "params": [{"name": "Alcohol", "bind": {"input": "checkbox"}}],
+  "mark": {"type": "bar"},
+  "encoding": {
+    "x": {"field": "INJ_OR_FATAL", "type": "quantitative", "title": "Total number of injuries and fatalities"},
+    "y": {"field": "LIGHT_CONDITION", "type": "nominal", "title": "Light condition"},
+    "color": {
+      "condition": {
+        "param": "Alcohol", 
+        "field": "ALCOHOL_RELATED", 
+        "type": "nominal",
+        "title": "Alcohol related"
+      },
+      "value": "red"
+    }
+  }
+}
