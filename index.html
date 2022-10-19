@@ -5,23 +5,36 @@
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
-  
-  
-  <!-- CSS file -->
-  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
-  
+  <title>Road Crashes in Victoria (June 2015 - July 2020)</title>  
 </head>
-<body>
+<body>  
+  <div id="vis1"></div>
   
-<div id="symbol_map"></div>
+  
+  
+  
 
-<script type="text/javascript">
-
-  var spec2 = "js/symbol_map.vg.json";
-  vegaEmbed('#symbol_map', spec2).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-</script>
-
+  <script type="text/javascript">
+    var Vis1 = "js/injuries_and_fatalities.vg.json";
+    var Vis2 = "js/fatalities.vg.json";
+    var Vis3 = "js/light_condition.vg.json;
+    var Vis4 = "js/days_of_week.vg.json;
+  
+    vegaEmbed('#vis1, Vis1).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+  
+    vegaEmbed('#vis2, Vis2).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+  
+    vegaEmbed('#vis3, Vis3).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+  
+    vegaEmbed('#vis4, Vis4).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+  </script>
 </body>
 </html>
