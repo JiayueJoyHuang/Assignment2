@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Road Crashes in Victoria (June 2015 - July 2020)</title>
   <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
-    
+  <title>Road Crashes in Victoria (June 2015 - July 2020)</title>  
 </head>
 <body>  
   <div id="vis1"></div>
@@ -16,10 +15,10 @@
   
 
   <script type="text/javascript">
-    var Vis1 = "js/fatalities.json";
-    var Vis2 = "js/fatalities.json";
-    var Vis3 = "js/light_condition.json;
-    var Vis4 = "js/days_of_week.json;
+    var Vis1 = "./fatalities.json";
+    var Vis2 = "./fatalities.json";
+    var Vis3 = "./light_condition.json;
+    var Vis4 = "./days_of_week.json;
   
     vegaEmbed('#vis1, Vis1).then(function(result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
