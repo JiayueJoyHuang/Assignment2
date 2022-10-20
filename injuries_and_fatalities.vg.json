@@ -30,20 +30,9 @@
           {"field": "LATITUDE", "type": "quantitative", "title": "Latitude"},
           {"field": "LGA_NAME", "type": "nominal", "title": "LGA"},
           {"field": "REGION_NAME", "type": "nominal", "title": "Region"},
-          {"field": "DAY_OF_WEEK", "type": "nominal", "title": "Day of week"},
-          {"field": "ACCIDENT_TYPE", "type": "nominal", "title": "Type of accident"},
           {"field": "FATALITY", "type": "quantitative", "title": "Number of fatalities"},
           {"field": "INJURY", "type": "quantitative", "title": "Number of injuries"},
-          {"field": "INJ_OR_FATAL", "type": "quantitative", "title": "Total number of injuries and fatalities"},	
-          {"field": "ALCOHOL_RELATED", "type": "nominal", "title": "Alcohol related accident"},
-          {"field": "SPEED_ZONE", "type": "nominal", "title": "Speed zone"},
-          {"field": "UNLICENCSED", "type": "quantitative", "title": "Number of unlicensed drivers involved"},
-          {"field": "NO_OF_VEHICLES", "type": "quantitative", "title": "Number of vehicles involved"},
-          {"field": "RMA", "type": "nominal", "title": "Type of road"},
-          {"field": "ROAD_GEOMETRY", "type": "nominal", "title": "Road geometry"},
-          {"field": "LIGHT_CONDITION", "type": "nominal", "title": "Light condition"},
-          {"field": "HIT_RUN_FLAG", "type": "nominal", "title": "Hit and run"},
-          {"field": "POLICE_ATTEND", "type": "nominal", "title": "Police involved"}	
+          {"field": "INJ_OR_FATAL", "type": "quantitative", "title": "Total number of injuries and fatalities"}
         ]
       }
     }  
