@@ -76,6 +76,7 @@
     var Vis2 = "./fatalities.vg.json";
     var Vis3 = "./light_condition.vg.json";
     var Vis4 = "./days_of_week.vg.json";
+    var Vis5 = "./type_of_crash.vg.json";
 
     vegaEmbed('#injuries_and_fatalities', Vis1, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
@@ -90,6 +91,10 @@
     }).catch(console.error);
 
     vegaEmbed('#days_of_week', Vis4, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    
+    vegaEmbed('#type_of_crash', Vis5, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
   </script>
