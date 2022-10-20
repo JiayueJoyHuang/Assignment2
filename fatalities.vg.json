@@ -2,7 +2,6 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json", 
   "width": 800, 
   "height": 450, 
-  "title": "Car crashes fatalities in Victoria (July 2015 - June 2020)",
   "projection": {"type": "mercator"},
   "layer": [
     {
