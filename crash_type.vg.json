@@ -1,6 +1,5 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Type of road crashes",
   "data":{"url": "https://raw.githubusercontent.com/JiayueJoyHuang/Assignment2/main/Road_Crashes_for_five_Years_Victoria.csv"},
   "mark": "arc",
   "transform": [
