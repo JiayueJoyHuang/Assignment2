@@ -6,7 +6,7 @@
   "mark": {"type": "bar"},
   "encoding": {
     "x": {"field": "INJ_OR_FATAL", "type": "quantitative", "title": "Total number of injuries and fatalities"},
-    "y": {"field": "DAY_OF_WEEK", "type": "ordinal", "title": "Day of week"},
+    "y": {"field": "DAY_OF_WEEK", "type": "ordinal", "title": "Day of week", "sort": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]},
     "color": {
       "condition": {
         "param": "Alcohol", 
