@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Type of road crashes",
+  "data":{"url": "https://raw.githubusercontent.com/JiayueJoyHuang/Assignment2/main/Road_Crashes_for_five_Years_Victoria.csv"},
+  "mark": "arc",
+  "transform": [
+    {
+      "aggregate":[{
+        "op":"count",
+        "field": "ACCIDENT_TYPE",
+        "as": "number_of_accidents"
+      }],
+      "groupby": ["ACCIDENT_TYPE"]
+    }
+  ],
+  "encoding": {
+    "theta": {"field": "number_of_accidents", "type":"quantitative"},
+    "color": {"field": "ACCIDENT_TYPE", "type": "nominal", "title": "Type of accident"}
+  }
+}
