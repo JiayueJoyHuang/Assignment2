@@ -15,6 +15,10 @@
   ],
   "encoding": {
     "theta": {"field": "number_of_accidents", "type":"quantitative"},
-    "color": {"field": "ACCIDENT_TYPE", "type": "nominal", "title": "Type of accident"}
+    "color": {"field": "ACCIDENT_TYPE", "type": "nominal", "title": "Type of accident"},
+    "tooltip":[
+      {"field": "ACCIDENT_TYPE", "type": "nominal", "title": "Type of accident"},
+      {"field": "number_of_accidents", "type": "quantitative", "title": "Number of accidents"}
+    ]
   }
 }
