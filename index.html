@@ -11,54 +11,19 @@
   <title>Road Crashes in Victoria (June 2015 - July 2020)</title>
 </head>
 <style>
-  * {
-      font-family: 'Oxygen', sans-serif;
-      line-height: 1.5;
-    }
-
-    h1 {
-      font-weight: 900;
-
-    }
-
-    body {
-      background-color: lightgray;
-    }
-
-    .page {
-      width: 750px;
-      background-color: white;
-      margin: auto;
-      padding: 70px;
-      padding-top: 35px;
-    }
-
-    .vis-container {
-      width: 100%;
-    }
-
-    .description h2,
-    h1 {
-      margin-top: 10px;
-    }
-
-    .description-right {
-      padding-left: 10px;
-    }
-
-    .description-left {
-      padding-right: 10px;
-    }
-
-    .pure-g {
-      margin-bottom: 25px;
-    }
-
-    .small-font {
-      font-size: 13px;
-    }
+  *{font-family: 'Source Sans Pro', sans-serif;}
+  h1, h2{font-weight: 900;}
+  body{background-colour: lightgray}
+  .page{
+    width: 800px;
+    background-colour: white;
+    margin: auto;
+    padding: 50px;
+    padding-top: 30px;}
+  .vis-container{width:100%;}  
 </style>
 <body>
+  <div class="page">
   <div class="pure-g">
     <div class="pure-u-1-2">
       <h1>Road Crashes in Victoria (June 2015 - July 2020)</h1>
@@ -74,6 +39,7 @@
   <div id="fatalities" class="vis-container"></div>
   <div id="light_condition" class="vis-container"></div>
   <div id="days_of_week" class="vis-container"></div>
+  </div>
   
   <script type="text/javascript">
     var Vis1 = "./injuries_and_fatalities.vg.json";
