@@ -1,6 +1,5 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json", 
-  "title": "Total number of injuries and fatalities on different days of the week",
   "data": {"url": "https://raw.githubusercontent.com/JiayueJoyHuang/Assignment2/main/Road_Crashes_for_five_Years_Victoria.csv"},
   "params": [{"name": "Alcohol", "bind": {"input": "checkbox"}}],
   "mark": {"type": "bar"},
