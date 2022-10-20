@@ -16,11 +16,11 @@
   body {background-colour: lightgray}
   .page{
     width: 800px;
-    background-colour: lightgray;
+    background-colour: white;
     margin: auto;
     padding: 50px;
     padding-top: 30px;}
-  .vis-container{width:100%;}
+  .vis-container{width:100%; height:100%;}
   .description h1, h2 {margin-top: 10px;}
   .description-right {padding-right: 10px;} 
   .description-left {padding-right: 10px;} 
@@ -30,18 +30,20 @@
 <body>
   <div class="page">
   <div class="pure-g">
-    <div class="pure-u-1-2">
+    <div class="pure-u-1-1">
       <h1>Road Crashes in Victoria (June 2015 - July 2020)</h1>
-      <br>
-      <br>
     </div>
-    <div class="pure-u-1-2">
+  </div>
+  <div class="pure-g">
+    <div class="pure-u-1-1">
       <p>Feeling safe is a basic human right. This visualisation presents information regarding road crashes in Victoria from June 2015 - July 2020.
         It aims to enhence our understanding of road safety in Victoria, to reduce the pain and suffereing caused by road crashes. The data presented
         has been collected by VicRoads, an organisation that developes and manages the roads in Victoria.</p>
     </div>
-    <div id="injuries_and_fatalities" class="vis-container"></div>
   </div>
+  
+  <div id="injuries_and_fatalities" class="vis-container"></div>
+  
   
   <div id="fatalities" class="vis-container"></div>
   <div id="light_condition" class="vis-container"></div>
